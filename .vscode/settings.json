@@ -1,0 +1,13 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.rulers": [120],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.detectIndentation": false,
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "css.validate": false
+}
