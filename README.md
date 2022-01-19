@@ -2,8 +2,6 @@
 
 This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [Tailwindcss](https://tailwindcss.com).
 
-Fork of [reactjs-vite-tailwindcss-boilerplate](https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate) that was created by [joaopaulomoraes](https://github.com/joaopaulomoraes).
-
 ## What is inside?
 
 This project uses many tools like:
