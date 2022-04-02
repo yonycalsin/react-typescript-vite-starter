@@ -63,4 +63,4 @@ npm run test
 
 ## License
 
-This project is licensed under the MIT License.
+©2022 Yony Calsin. All Rights Reserved.
