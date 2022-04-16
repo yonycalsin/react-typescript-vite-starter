@@ -1,4 +1,4 @@
-# React Tailwindcss Boilerplate build with Vite + Typescript
+# reactjs-ts-vite-tailwindcss-boilerplate
 
 This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [Tailwindcss](https://tailwindcss.com).
 
@@ -6,7 +6,7 @@ This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplat
 
 This project uses many tools like:
 
-- [ReactJS](https://reactjs.org)
+- [React 18](https://reactjs.org)
 - [Vite](https://vitejs.dev)
 - [TypeScript](https://www.typescriptlang.org)
 - [Jest](https://jestjs.io)
@@ -15,33 +15,20 @@ This project uses many tools like:
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)
 
-## Getting Started
+## Requirements
 
-### Install
+Node.js v14 LTS & Yarn v1.22.x
 
-Create the project.
+> You can use [nvm-sh](https://github.com/nvm-sh/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
 
-```bash
-npx degit yonycalsin/reactjs-ts-vite-tailwindcss-boilerplate my-app
-```
+## Quick start
 
-Access the project directory.
+To prepare and start your dev enviroment
 
-```bash
-cd my-app
-```
-
-Install dependencies.
-
-```bash
-yarn install
-```
-
-Serve with hot reload at http://localhost:3000.
-
-```bash
-yarn dev
-```
+1. Install dependencies `yarn install --frozen-lockfile`
+2. [WIP] Create a `.env` file following `.env.example`
+3. Run server `yarn dev`
+4. Go to `http://127.0.0.1:3000` 🚀
 
 ### Lint
 
@@ -61,6 +48,6 @@ yarn build
 yarn test
 ```
 
-## License
+### License
 
 ©2022 Yony Calsin. All Rights Reserved.
