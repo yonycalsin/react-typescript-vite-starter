@@ -34,31 +34,31 @@ cd my-app
 Install dependencies.
 
 ```bash
-npm install
+yarn install
 ```
 
 Serve with hot reload at http://localhost:3000.
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ### Lint
 
 ```bash
-npm run lint
+yarn lint
 ```
 
 ### Build
 
 ```bash
-npm run build
+yarn build
 ```
 
 ### Test
 
 ```bash
-npm run test
+yarn test
 ```
 
 ## License

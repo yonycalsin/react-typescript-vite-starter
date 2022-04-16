@@ -24,13 +24,13 @@ jobs:
             ${{ runner.os }}-node-
 
       - if: steps.node-modules.outputs.cache-hit != 'true'
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Static Testing
-        run: npm run validate
+        run: yarn validate
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Testing
-        run: npm run test
+        run: yarn test
