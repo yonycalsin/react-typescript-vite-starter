@@ -1,6 +1,6 @@
-dist
-dist-ssr
+app-build
 *.local
+.env
 
 # dependencies
 /node_modules
