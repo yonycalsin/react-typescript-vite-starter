@@ -58,8 +58,8 @@ export default (config: ConfigEnv): UserConfig => {
       open: true,
     },
     build: {
-      outDir: 'app-build',
-      sourcemap: true,
+      // when you have sentry enabled, you can use it to report errors
+      sourcemap: false,
     },
     resolve: {
       alias: {
