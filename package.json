@@ -9,7 +9,7 @@
     "check:format": "yarn prettier -- --list-different",
     "check:lint": "yarn lint",
     "check:type": "tsc --noEmit",
-    "clean": "rimraf -rf app-build coverage build",
+    "clean": "rimraf -rf dist coverage build",
     "dev": "vite",
     "format": "yarn prettier -- --write",
     "lint": "eslint src --max-warnings=0",
