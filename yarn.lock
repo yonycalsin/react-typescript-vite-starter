@@ -1621,6 +1621,13 @@
     "@rollup/pluginutils" "^4.1.1"
     react-refresh "^0.10.0"
 
+"@yonycalsin/eslint-plugin-import-sort@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@yonycalsin/eslint-plugin-import-sort/-/eslint-plugin-import-sort-1.0.2.tgz#aae3646d8f453de75c5c1edc4791f7ba9470460d"
+  integrity sha512-b1sbt3eNH6dHN7uK0oFxP6VvIuipgf2Ovl+XA6hr5ehg1VrcgES1+lC6kO0Rp/M8y+uFOz1PSerRfirv7ajNtg==
+  dependencies:
+    eslint-plugin-simple-import-sort "7.0.0"
+
 "@yonycalsin/prettier-config-react-typescript@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@yonycalsin/prettier-config-react-typescript/-/prettier-config-react-typescript-1.0.1.tgz#18075df514e4b37f1569c4b279b95f791f66c2db"
