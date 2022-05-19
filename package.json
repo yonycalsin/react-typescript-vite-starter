@@ -1,8 +1,8 @@
 {
-  "name": "@yonycalsin/react-typescript-vite-boilerplate",
+  "name": "@yonycalsin/react-typescript-vite-starter",
   "version": "0.0.0",
   "private": true,
-  "description": "React + Typescript + Vite - Boilerplate",
+  "description": "React + Typescript + Vite - Starter",
   "author": "Yony Calsin",
   "scripts": {
     "build": "tsc && vite build",

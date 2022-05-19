@@ -1,6 +1,6 @@
-# react-typescript-vite-boilerplate
+# @yonycalsin/react-typescript-vite-starter
 
-This is a [ReactJS](https://reactjs.org) + [Typescript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev) boilerplate.
+This is a [ReactJS](https://reactjs.org) + [Typescript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev) starter.
 
 ## What is inside?
 
