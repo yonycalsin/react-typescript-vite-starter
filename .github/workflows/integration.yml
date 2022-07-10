@@ -1,0 +1,40 @@
+name: Integration
+
+on: push
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['14.17.0']
+        os: [ubuntu-latest]
+        pnpm: ['7.3.0']
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: ${{ matrix.pnpm }}
+
+      - name: Setup Node.js (${{ matrix.node }}) environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Static Testing
+        run: pnpm run validate
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Testing
+        run: pnpm run test

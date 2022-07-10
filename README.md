@@ -16,7 +16,7 @@ This project uses many tools like:
 
 ## Requirements
 
-Node.js v14 LTS & Yarn v1.22.x
+Node.js v14.17.0 LTS & Pnpm v7.3.0
 
 > You can use [nvm-sh](https://github.com/nvm-sh/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
 
@@ -24,27 +24,27 @@ Node.js v14 LTS & Yarn v1.22.x
 
 To prepare and start your dev enviroment
 
-1. Install dependencies `yarn install --frozen-lockfile`
+1. Install dependencies `pnpm install`
 2. [WIP] Create a `.env` file following `.env.example`
-3. Run server `yarn dev`
+3. Run server `pnpm run dev`
 4. Go to `http://127.0.0.1:3000` 🚀
 
 ### Lint
 
 ```bash
-yarn lint
+pnpm run lint
 ```
 
 ### Build
 
 ```bash
-yarn build
+pnpm run build
 ```
 
 ### Test
 
 ```bash
-yarn test
+pnpm run test
 ```
 
 ### License
