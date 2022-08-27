@@ -14,41 +14,40 @@ export default (config: ConfigEnv): UserConfig => {
 
   const plugins: (PluginOption | PluginOption[])[] = [reactRefresh()]
 
-  if (config.command === 'build') {
-    const hasGA4MeasurementId = !!rawEnv.VITE_GA4_MEASUREMENT_ID
+  const hasGA4MeasurementId = !!rawEnv.VITE_GA4_MEASUREMENT_ID
 
-    const tags: HtmlTagDescriptor[] = []
+  const tags: HtmlTagDescriptor[] = []
 
-    if (hasGA4MeasurementId) {
-      tags.push(
-        {
-          injectTo: 'head',
-          tag: 'script',
-          attrs: {
-            async: true,
-            src: `https://www.googletagmanager.com/gtag/js?id=${rawEnv.VITE_GA4_MEASUREMENT_ID}`,
-          },
+  if (hasGA4MeasurementId) {
+    tags.push(
+      {
+        injectTo: 'head',
+        tag: 'script',
+        attrs: {
+          async: true,
+          src: `https://www.googletagmanager.com/gtag/js?id=${rawEnv.VITE_GA4_MEASUREMENT_ID}`,
         },
-        {
-          injectTo: 'head',
-          tag: 'script',
-          children: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${rawEnv.VITE_GA4_MEASUREMENT_ID}');
-          `,
-        },
-      )
-    }
-
-    plugins.push(
-      createHtmlPlugin({
-        minify: true,
-        inject: { tags },
-      }),
+      },
+      {
+        injectTo: 'head',
+        tag: 'script',
+        children: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${rawEnv.VITE_GA4_MEASUREMENT_ID}');
+        `,
+      },
     )
   }
+
+  plugins.push({
+    ...createHtmlPlugin({
+      minify: true,
+      inject: { tags },
+    }),
+    apply: 'build',
+  })
 
   return {
     plugins,
@@ -58,7 +57,7 @@ export default (config: ConfigEnv): UserConfig => {
       open: true,
     },
     build: {
-      // when you have sentry enabled, you can use it to report errors
+      // if you are using sentry, you can use it to report the errors
       sourcemap: false,
     },
     resolve: {
