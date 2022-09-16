@@ -36,5 +36,5 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - name: Testing
-        run: pnpm run test
+      - name: Unit Testing
+        run: pnpm run test:unit:ci
