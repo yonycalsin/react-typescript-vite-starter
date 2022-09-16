@@ -1,5 +1,5 @@
 describe('basic testing', () => {
-  it('should work', () => {
-    expect(true).toBe(true)
+  it('snapshots an object', () => {
+    expect({ state: { id: 23 } }).toMatchSnapshot()
   })
 })
