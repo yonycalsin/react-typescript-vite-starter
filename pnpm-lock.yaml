@@ -25,6 +25,7 @@ specifiers:
   ejs: 3.1.8
   eslint: 8.23.1
   eslint-config-prettier: 8.5.0
+  eslint-plugin-jest-dom: 4.0.2
   eslint-plugin-prettier: 4.2.1
   eslint-plugin-react: 7.31.8
   eslint-plugin-react-hooks: 4.6.0
@@ -73,6 +74,7 @@ devDependencies:
   ejs: 3.1.8
   eslint: 8.19.0
   eslint-config-prettier: 8.5.0_eslint@8.19.0
+  eslint-plugin-jest-dom: 4.0.2_eslint@8.19.0
   eslint-plugin-prettier: 4.2.1_7uxdfn2xinezdgvmbammh6ev5i
   eslint-plugin-react: 7.31.8_eslint@8.19.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.19.0
@@ -3487,6 +3489,18 @@ packages:
       eslint: 8.19.0
     dev: true
 
+  /eslint-plugin-jest-dom/4.0.2_eslint@8.19.0:
+    resolution: {integrity: sha512-Jo51Atwyo2TdcUncjmU+UQeSTKh3sc2LF/M5i/R3nTU0Djw9V65KGJisdm/RtuKhy2KH/r7eQ1n6kwYFPNdHlA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0, npm: '>=6', yarn: '>=1'}
+    peerDependencies:
+      eslint: ^6.8.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@babel/runtime': 7.18.6
+      '@testing-library/dom': 8.15.0
+      eslint: 8.19.0
+      requireindex: 1.2.0
+    dev: true
+
   /eslint-plugin-prettier/4.2.1_7uxdfn2xinezdgvmbammh6ev5i:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
@@ -5587,6 +5601,11 @@ packages:
   /require-directory/2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /requireindex/1.2.0:
+    resolution: {integrity: sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==}
+    engines: {node: '>=0.10.5'}
     dev: true
 
   /resolve-cwd/3.0.0:
