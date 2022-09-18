@@ -3,4 +3,4 @@
 
 pnpm exec cloak
 
-pnpm run check:type
+pnpm run lint:ts
