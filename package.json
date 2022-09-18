@@ -8,7 +8,7 @@
     "lib:ts": "tsc",
     "lib:es": "eslint src --ignore-path .gitignore --max-warnings=0",
     "lib:pretty": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,tsx,scss,css,md}\"",
-    "lib:jes": "cross-env TZ=America/Los_Angeles jest --forceExit --detectOpenHandles --env=jsdom --colors",
+    "lib:jest": "cross-env TZ=America/Los_Angeles jest --forceExit --detectOpenHandles --env=jsdom --colors",
     "lib:vite": "vite",
     "start": "run-s start:*",
     "start:vite": "pnpm run lib:vite preview",
