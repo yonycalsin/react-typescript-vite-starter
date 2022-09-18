@@ -11,13 +11,13 @@ jobs:
       matrix:
         node: ['16.14.0']
         os: [ubuntu-latest]
-        pnpm: ['7.3.0']
+        pnpm: ['7.11.0']
 
     steps:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Install pnpm
+      - name: Install pnpm (${{ matrix.pnpm }})
         uses: pnpm/action-setup@v2.2.2
         with:
           version: ${{ matrix.pnpm }}
