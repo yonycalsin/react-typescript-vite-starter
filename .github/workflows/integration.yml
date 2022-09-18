@@ -30,8 +30,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Static Testing
-        run: pnpm run validate
+      - name: Lint
+        run: pnpm run lint
 
       - name: Build
         run: pnpm run build
