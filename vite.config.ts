@@ -1,4 +1,4 @@
-import reactRefresh from '@vitejs/plugin-react-refresh'
+import react from '@vitejs/plugin-react'
 import path from 'path'
 import { ConfigEnv, HtmlTagDescriptor, loadEnv, PluginOption, UserConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
@@ -12,7 +12,12 @@ export default (config: ConfigEnv): UserConfig => {
    */
   const rawEnv = loadEnv(config.mode, process.cwd(), '')
 
-  const plugins: (PluginOption | PluginOption[])[] = [reactRefresh()]
+  const plugins: (PluginOption | PluginOption[])[] = [
+    react({
+      // Exclude storybook stories
+      exclude: /\.stories\.(t|j)sx?$/,
+    }),
+  ]
 
   const hasGA4MeasurementId = !!rawEnv.VITE_GA4_MEASUREMENT_ID
 
