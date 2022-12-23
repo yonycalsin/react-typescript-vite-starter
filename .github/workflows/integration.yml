@@ -1,6 +1,8 @@
 name: Integration
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -14,18 +16,34 @@ jobs:
         pnpm: ['7.14.2']
 
     steps:
-      - name: Check out code
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install pnpm (${{ matrix.pnpm }})
-        uses: pnpm/action-setup@v2.2.2
-        with:
-          version: ${{ matrix.pnpm }}
-
-      - name: Setup Node.js (${{ matrix.node }}) environment
+      - name: Setup Node (${{ matrix.node }})
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
+
+      - name: Install Pnpm (${{ matrix.pnpm }})
+        id: pnpm-install
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ matrix.pnpm }}
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
         run: pnpm install
