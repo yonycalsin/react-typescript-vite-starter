@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react'
-import path from 'path'
 import { ConfigEnv, HtmlTagDescriptor, loadEnv, PluginOption, UserConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default (config: ConfigEnv): UserConfig => {
@@ -17,6 +17,7 @@ export default (config: ConfigEnv): UserConfig => {
       // Exclude storybook stories
       exclude: /\.stories\.(t|j)sx?$/,
     }),
+    tsconfigPaths(),
   ]
 
   const hasGA4MeasurementId = !!rawEnv.VITE_GA4_MEASUREMENT_ID
@@ -59,16 +60,11 @@ export default (config: ConfigEnv): UserConfig => {
     server: {
       port: Number(rawEnv.PORT) || 3000,
       strictPort: true,
-      open: true,
+      open: false,
     },
     build: {
       // if you are using sentry, you can use it to report the errors
       sourcemap: false,
-    },
-    resolve: {
-      alias: {
-        '~': path.resolve(__dirname, './src'),
-      },
     },
   }
 }
