@@ -9,7 +9,7 @@ This project uses many tools like:
 - [React 18](https://reactjs.org)
 - [Vite](https://vitejs.dev)
 - [TypeScript](https://www.typescriptlang.org)
-- [Jest](https://jestjs.io)
+- [Vitest](https://vitest.dev/)
 - [Testing Library](https://testing-library.com)
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)
