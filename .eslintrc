@@ -10,14 +10,13 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "@yonycalsin/import-sort"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:@yonycalsin/import-sort/react"
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -33,7 +32,9 @@
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-non-null-assertion": "off"
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@yonycalsin/import-sort/typescript-react-imports": "error",
+    "@yonycalsin/import-sort/typescript-react-exports": "error"
   },
   "overrides": [
     {
