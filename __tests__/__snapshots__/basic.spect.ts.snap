@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`basic testing snapshots an object 1`] = `
-{
-  "state": {
-    "id": 23,
-  },
-}
-`;
