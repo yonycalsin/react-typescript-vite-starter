@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import react from '@vitejs/plugin-react'
 import { ConfigEnv, HtmlTagDescriptor, loadEnv, PluginOption, UserConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
@@ -65,6 +67,23 @@ export default (config: ConfigEnv): UserConfig => {
     build: {
       // if you are using sentry, you can use it to report the errors
       sourcemap: false,
+    },
+    test: {
+      // Configure Vitest (https://vitest.dev/config/)
+      environment: 'jsdom',
+      setupFiles: ['./vitest.setup.ts'],
+      coverage: {
+        exclude: [
+          'src/**/*.d.ts',
+          'src/app.tsx',
+          'src/**/index.{ts,tsx}',
+          'src/typings/**/*.*',
+          'src/theme/**/*.*',
+          'src/services/**/*.*',
+          'src/assets/**/*.*',
+          'vitest.setup.ts',
+        ],
+      },
     },
   }
 }
