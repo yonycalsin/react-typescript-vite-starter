@@ -57,7 +57,7 @@ devDependencies:
     version: 5.3.0(eslint@8.44.0)
   '@yonycalsin/prettier-config-react-typescript':
     specifier: 2.0.0
-    version: 2.0.0(prettier@3.0.0)
+    version: 2.0.0(prettier@2.8.8)
   cross-env:
     specifier: 7.0.3
     version: 7.0.3
@@ -72,7 +72,7 @@ devDependencies:
     version: 8.8.0(eslint@8.44.0)
   eslint-plugin-prettier:
     specifier: 4.2.1
-    version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@3.0.0)
+    version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@2.8.8)
   eslint-plugin-react:
     specifier: 7.32.2
     version: 7.32.2(eslint@8.44.0)
@@ -95,8 +95,8 @@ devDependencies:
     specifier: 4.1.5
     version: 4.1.5
   prettier:
-    specifier: 3.0.0
-    version: 3.0.0
+    specifier: 2.8.8
+    version: 2.8.8
   rimraf:
     specifier: 5.0.1
     version: 5.0.1
@@ -294,7 +294,6 @@ packages:
   /@babel/parser@7.22.7:
     resolution: {integrity: sha512-7NF8pOkHP5o2vpmGgNGcfAeCvOYhGLyA3Z4eBQkT1RJlWu47n63bCs93QfJ2hIAFCil7L5P2IWhs1oToVgrL0Q==}
     engines: {node: '>=6.0.0'}
-    hasBin: true
     dependencies:
       '@babel/types': 7.22.5
     dev: true
@@ -739,7 +738,6 @@ packages:
 
   /@nicolo-ribaudo/semver-v6@6.3.3:
     resolution: {integrity: sha512-3Yc1fUTs69MG/uZbJlLSI3JISMn2UV2rg+1D/vROUqZyh3l6iYHCs7GMp+M40ZD7yOdDbYjJcU1oTJhrc+dGKg==}
-    hasBin: true
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:
@@ -1166,10 +1164,10 @@ packages:
       eslint-plugin-simple-import-sort: 8.0.0(eslint@8.44.0)
     dev: true
 
-  /@yonycalsin/prettier-config-react-typescript@2.0.0(prettier@3.0.0):
+  /@yonycalsin/prettier-config-react-typescript@2.0.0(prettier@2.8.8):
     resolution: {integrity: sha512-0KSOaVB1DoXUoRkkyO4L1C3IQHutydkkukmuug+vKLfDl+8qFXS3rtFYTcGLB1d04uMKgYyHHQczGLxRfTEm3g==}
     dependencies:
-      prettier-plugin-packagejson: 2.4.0(prettier@3.0.0)
+      prettier-plugin-packagejson: 2.4.0(prettier@2.8.8)
     transitivePeerDependencies:
       - prettier
     dev: true
@@ -1378,7 +1376,6 @@ packages:
   /browserslist@4.21.9:
     resolution: {integrity: sha512-M0MFoZzbUrRU4KNfCrDLnvyE7gub+peetoTid3TBIqtunaDJyXlwhakT+/VkvSXcfIzFfK/nkCs4nmyTmxdNSg==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
-    hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001514
       electron-to-chromium: 1.4.454
@@ -2023,7 +2020,7 @@ packages:
       eslint: 8.44.0
     dev: true
 
-  /eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@3.0.0):
+  /eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@2.8.8):
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2036,7 +2033,7 @@ packages:
     dependencies:
       eslint: 8.44.0
       eslint-config-prettier: 8.8.0(eslint@8.44.0)
-      prettier: 3.0.0
+      prettier: 2.8.8
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -3023,7 +3020,6 @@ packages:
   /jsesc@2.5.2:
     resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
     engines: {node: '>=4'}
-    hasBin: true
     dev: true
 
   /json-parse-better-errors@1.0.2:
@@ -3041,7 +3037,6 @@ packages:
   /json5@2.2.3:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
-    hasBin: true
     dev: true
 
   /jsonc-parser@3.2.0:
@@ -3700,7 +3695,7 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-packagejson@2.4.0(prettier@3.0.0):
+  /prettier-plugin-packagejson@2.4.0(prettier@2.8.8):
     resolution: {integrity: sha512-NW2xI9w0n251IH1r1QNIf+kVf28rr2p33aOENfrBDOFVfp3FdQ++rKHkU0odYQOlnTtvedAGxasNC+Mk+enxVQ==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -3708,14 +3703,14 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 3.0.0
+      prettier: 2.8.8
       sort-package-json: 2.1.0
       synckit: 0.8.4
     dev: true
 
-  /prettier@3.0.0:
-    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
-    engines: {node: '>=14'}
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
 
@@ -4439,7 +4434,6 @@ packages:
 
   /update-browserslist-db@1.0.11(browserslist@4.21.9):
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
-    hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
