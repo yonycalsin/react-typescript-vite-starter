@@ -7,6 +7,7 @@
   "files.associations": {
     "*.js": "javascriptreact"
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.rulers": [120],
   "files.eol": "\n",
   "[jsonc]": {

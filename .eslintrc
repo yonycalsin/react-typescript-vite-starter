@@ -10,7 +10,12 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "@yonycalsin/import-sort"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "@yonycalsin/import-sort"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -38,8 +43,13 @@
   },
   "overrides": [
     {
-      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
-      "extends": ["plugin:testing-library/react"]
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": [
+        "plugin:testing-library/react"
+      ]
     }
   ]
 }
