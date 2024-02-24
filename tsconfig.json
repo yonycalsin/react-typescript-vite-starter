@@ -14,7 +14,7 @@
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react",
-    "importsNotUsedAsValues": "error",
+    "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"]
