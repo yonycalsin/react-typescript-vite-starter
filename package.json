@@ -4,6 +4,7 @@
   "private": true,
   "description": "React + Typescript + Vite - Starter",
   "author": "Yony Calsin",
+  "type": "module",
   "scripts": {
     "lib:ts": "tsc",
     "lib:es": "eslint src --ignore-path .gitignore --max-warnings=0",
