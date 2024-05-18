@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "vitest.explorer",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "YoavBls.pretty-ts-errors",
+    "kisstkondoros.vscode-gutter-preview",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker"
+  ],
+  "unwantedRecommendations": ["ms-azuretools.vscode-docker", "ms-vscode-remote.remote-containers"]
+}
