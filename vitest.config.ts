@@ -8,7 +8,7 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
-      environment: 'happy-dom',
+      environment: 'jsdom',
       setupFiles: ['./src/__tests__/setup.ts'],
     },
   }),

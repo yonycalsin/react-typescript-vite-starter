@@ -20,6 +20,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
+    /* Testing */
+    "types": ["vitest/jsdom", "@testing-library/jest-dom/vitest"],
+
     /* Custom */
     "verbatimModuleSyntax": true,
     "baseUrl": ".",

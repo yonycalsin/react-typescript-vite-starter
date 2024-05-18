@@ -6,7 +6,11 @@ describe('GIVEN App', () => {
   it('should render the title', () => {
     render(<App />)
 
-    expect(screen.getByText(/react/i)).toMatchSnapshot()
+    const title = screen.queryByText(/react/i)
+
+    expect(title).toBeInTheDocument()
+
+    expect(title).toMatchSnapshot()
   })
 
   it('should render the author', () => {
