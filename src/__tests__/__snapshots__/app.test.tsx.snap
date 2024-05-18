@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GIVEN App > should render the author 1`] = `
+<a
+  href="https://www.yonycalsin.com/"
+>
+  Yony Calsin
+</a>
+`;
+
+exports[`GIVEN App > should render the title 1`] = `
+<h1>
+  React + Typescript + Vite - Starter
+</h1>
+`;

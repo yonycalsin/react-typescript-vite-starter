@@ -7,6 +7,9 @@ import viteConfig from './vite.config'
 export default mergeConfig(
   viteConfig,
   defineConfig({
-    test: {},
+    test: {
+      environment: 'happy-dom',
+      setupFiles: ['./src/__tests__/setup.ts'],
+    },
   }),
 )
