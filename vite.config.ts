@@ -4,13 +4,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
-      // Exclude storybook stories
-      exclude: /\.stories\.(t|j)sx?$/,
-    }),
-    tsconfigPaths(),
-  ],
+  plugins: [react(), tsconfigPaths()],
   server: {
     port: Number(process.env.PORT) || 3000,
     strictPort: true,
