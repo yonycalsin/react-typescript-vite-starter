@@ -16,7 +16,7 @@ This project uses many tools like:
 
 ## Requirements
 
-Node.js v20.11.1 LTS & Pnpm v8.15.4
+Node.js v20.11.1 LTS & Pnpm v9.1.2
 
 > You can use [nvm-sh](https://github.com/nvm-sh/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
 
